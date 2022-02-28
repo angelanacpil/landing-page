@@ -1,0 +1,46 @@
+NAV 
+- Home, Announcements, Terms and Conditions, Sign in Button 
+
+COVER 
+- Pic and CTA Button
+
+SERVICES
+- (3) Cards with titles
+
+FOOTER
+- placeholder copyright
+
+______________________
+
+PRIMARY PALETTE
+main: '#E91E63'
+light: '#ff558f'
+dark: '#AC1C4D'
+
+SECONDARY PALETTE
+main: '#899499'
+light: '#D3D3D3'
+dark: '#818589'
+
+GRAY
+#e1e1e1
+
+______________________
+
+NAVBAR 
+X- resize burger icon 
+X- display nav links (sm+)
+X- change nav components spacing (sm+)
+X- style anchors and button 
+X- hover, active, indicator 
+- make burger icon functional
+
+COVER 
+X- align items 
+- button responsiveness
+- Show image (local path) & fix its display 
+
+SERVICES 
+- (3) Cards 
+
+THEME 
