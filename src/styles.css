@@ -1,24 +1,29 @@
-button {
+/* button {
   text-transform: uppercase;
   color: #e91e63;
   text-decoration: none;
-}
-
-/* main {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("https://i.pinimg.com/736x/ac/6e/44/ac6e44c1281146fac7cbced026f8584f.jpg")
-      fixed center / cover no-repeat;
 } */
 
 main {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100vw;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("") fixed center / cover no-repeat;
+  padding: 2rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 85, 143, 0.5)),
+    url("https://farm8.staticflickr.com/7547/16251490732_1d06e6e0be_b.jpg")
+      center / cover no-repeat;
+}
+
+img {
+  /* width: , */
+}
+
+@media (max-width: 400px) {
+  main {
+    flex-direction: column;
+  }
 }
 
 /* https://tnt.abante.com.ph/wp-content/uploads/2020/02/malabon-city-hall.jpg */

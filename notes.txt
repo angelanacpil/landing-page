@@ -7,6 +7,9 @@ COVER
 SERVICES
 - (3) Cards with titles
 
+SECTIONS (steps and requirements)
+- 
+
 FOOTER
 - placeholder copyright
 
@@ -37,10 +40,14 @@ X- hover, active, indicator
 
 COVER 
 X- align items 
-- button responsiveness
-- Show image (local path) & fix its display 
+X- button responsiveness
+X- Show image (local path) & fix its display 
 
 SERVICES 
 - (3) Cards 
 
-THEME 
+THEME & Polishing  
+- font color 
+- button color 
+- Banner img 
+- button cover size fix 
