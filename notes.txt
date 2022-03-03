@@ -44,10 +44,15 @@ X- button responsiveness
 X- Show image (local path) & fix its display 
 
 SERVICES 
-- (3) Cards 
+- Services Card Style const 
+- 3 Cards 
+
+SECTIONS 
+- 
 
 THEME & Polishing  
 - font color 
 - button color 
 - Banner img 
 - button cover size fix 
+- Divide components separately 

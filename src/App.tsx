@@ -8,6 +8,7 @@ import Button from "@mui/material/Button";
 import CoverPic from "./components/malabon-city-hall.jpg";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
+import Services from "./components/Services";
 
 // FONTS
 import "@fontsource/roboto/300.css";
@@ -20,7 +21,7 @@ const style = {
   width: { xs: "20rem", sm: "25rem" },
   height: { xs: "20rem", sm: "25rem" },
   marginTop: { xs: "15rem", sm: "15rem" },
-  marginRight: { lg: "10rem" }
+  marginRight: { lg: "5rem" }
 };
 
 export default function App() {
@@ -34,7 +35,7 @@ export default function App() {
         {/* COVER */}
         <Grid item>
           <main>
-            <Box sx={{ p: { xs: 6.5, sm: 3, lg: 10 } }}>
+            <Box sx={{ p: { xs: 6.5, sm: 3, lg: 16 } }}>
               <Typography
                 mb={5}
                 sx={{
@@ -57,8 +58,10 @@ export default function App() {
             />
           </main>
         </Grid>
-        {/* SECTIONS */}
-        <Grid item></Grid>
+        {/* SERVICES */}
+        <Grid item>
+          <Services></Services>
+        </Grid>
       </Grid>
     </CssBaseline>
   );

@@ -18,7 +18,9 @@ export default function NavBar() {
   };
 
   return (
-    <Card sx={{ position: "fixed", right: 0, top: 0, left: 0, p: 1.5 }}>
+    <Card
+      sx={{ position: "fixed", right: 0, top: 0, left: 0, p: 1.5, zIndex: 3 }}
+    >
       <Stack
         spacing={2}
         direction="row"
