@@ -44,11 +44,22 @@ X- button responsiveness
 X- Show image (local path) & fix its display 
 
 SERVICES 
-- Services Card Style const 
-- 3 Cards 
+X- Services Card Style const 
+X- 3 Cards 
 
 SECTIONS 
-- 
+Requirements first, 
+(3) Step Circles (alternating)
+
+REQUIREMENTS
+- Centered Left Card (smooth edges): Requirements 
+- Right: Avatar with icon or number + Description (with border)
+- take note of the Spacing
+
+STEPS 
+- Centered Left Card (smooth edges): Steps 
+- Right: (3) Step Circles, alternating 
+Container: Stack, Middle one different 
 
 THEME & Polishing  
 - font color 

@@ -9,6 +9,8 @@ import CoverPic from "./components/malabon-city-hall.jpg";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Services from "./components/Services";
+import ReqGraph from "./components/ReqGraph";
+import StepsGraph from "./components/StepsGraph";
 
 // FONTS
 import "@fontsource/roboto/300.css";
@@ -62,6 +64,16 @@ export default function App() {
         <Grid item>
           <Services></Services>
         </Grid>
+      </Grid>
+
+      {/* REQUIREMENTS */}
+      <Grid item>
+        <ReqGraph></ReqGraph>
+      </Grid>
+
+      {/* STEPS */}
+      <Grid item>
+        <StepsGraph></StepsGraph>
       </Grid>
     </CssBaseline>
   );
