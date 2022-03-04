@@ -27,7 +27,7 @@ export default function Services() {
         px: 3
       }}
     >
-      <Typography sx={{ fontWeight: "bold" }} variant="h4">
+      <Typography sx={{ fontWeight: "bold" }} variant="h3">
         Services
       </Typography>
       <Typography sx={{ color: "gray" }}>

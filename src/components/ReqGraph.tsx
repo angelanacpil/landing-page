@@ -32,7 +32,6 @@ export default function ReqGraph() {
     >
       <Stack
         spacing={10}
-        alignItems="center"
         direction={{ xs: "column", sm: "row" }}
         sx={{ textAlign: { xs: "center", sm: "left" } }}
       >

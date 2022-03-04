@@ -11,6 +11,7 @@ import Paper from "@mui/material/Paper";
 import Services from "./components/Services";
 import ReqGraph from "./components/ReqGraph";
 import StepsGraph from "./components/StepsGraph";
+import Footer from "./components/Footer";
 
 // FONTS
 import "@fontsource/roboto/300.css";
@@ -66,6 +67,26 @@ export default function App() {
         </Grid>
       </Grid>
 
+      {/* NEW BUSINESS PERMIT */}
+      <Grid
+        item
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+          my: "3.5rem",
+          gap: "1.5rem",
+          textAlign: "center"
+        }}
+      >
+        <Typography sx={{ fontWeight: "bold" }} variant="h4">
+          New Business Permit
+        </Typography>
+        <Typography sx={{ color: "gray", px: 3 }}>
+          Lorem ipsum dolor sit amet consectetur adipisicing.
+        </Typography>
+      </Grid>
+
       {/* REQUIREMENTS */}
       <Grid item>
         <ReqGraph></ReqGraph>
@@ -74,6 +95,11 @@ export default function App() {
       {/* STEPS */}
       <Grid item>
         <StepsGraph></StepsGraph>
+      </Grid>
+
+      {/* FOOTER */}
+      <Grid item>
+        <Footer></Footer>
       </Grid>
     </CssBaseline>
   );

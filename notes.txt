@@ -52,18 +52,31 @@ Requirements first,
 (3) Step Circles (alternating)
 
 REQUIREMENTS
-- Centered Left Card (smooth edges): Requirements 
-- Right: Avatar with icon or number + Description (with border)
-- take note of the Spacing
+X- Centered Left Card (smooth edges): Requirements 
+X- Right: Avatar with icon or number + Description (with border)
+X- take note of the Spacing
 
 STEPS 
-- Centered Left Card (smooth edges): Steps 
-- Right: (3) Step Circles, alternating 
-Container: Stack, Middle one different 
+X- Centered Left Card (smooth edges): Steps 
+X- Right: (3) Step Circles, alternating 
+XContainer: Stack, Middle one different 
+
+FOOTER 
+X- Copyright 
+
+MOBILE 
+X
 
 THEME & Polishing  
+- ThemeProvider, Change Primary/Secondary
 - font color 
 - button color 
 - Banner img 
 - button cover size fix 
 - Divide components separately 
+
+REFACTOR 
+
+
+
+          <Box sx={{ border: 2, width: "20rem", height: "20rem" }}></Box>

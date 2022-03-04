@@ -4,6 +4,34 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
+import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+
+const styles = {
+  outerCircle: {
+    borderRadius: "50%",
+    border: 2,
+    p: 1
+  },
+  innerCircle: {
+    borderRadius: "50%",
+    border: 1,
+    width: { xs: "17rem", md: "20rem" },
+    height: { xs: "17rem", md: "20rem" },
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+    gap: "1rem",
+    p: { xs: 2, md: 5 }
+  },
+  arrow: { fontSize: { xs: "7rem", md: "10rem" }, transform: "rotate(90deg)" },
+  infoBox: {
+    textAlign: "left",
+    border: 2,
+    width: { xs: "15rem", md: "20rem" },
+    height: "20rem",
+    p: 3
+  }
+};
 
 export default function StepsGraph() {
   return (
@@ -18,23 +46,168 @@ export default function StepsGraph() {
         textAlign: "center"
       }}
     >
-      <Stack
-        spacing={15}
-        alignItems="center"
-        direction={{ xs: "column", sm: "row" }}
-      >
+      <Stack spacing={10} direction={{ xs: "column", sm: "row" }}>
         <Typography sx={{ fontWeight: "bold" }} variant="h4">
-          Steps
+          Procedure
         </Typography>
 
-        {/*  */}
-        <Stack direction="row">
-          {/* 1 */}
-          <Stack direction="row" alignItems="center" spacing={2}>
-            <Avatar>1 </Avatar>
-            <Typography variant="h6">
-              Duly Accomplished Application Form
-            </Typography>
+        <Stack direction="row" spacing={5}>
+          <Stack direction="column" alignItems="center" spacing={5}>
+            <Stack
+              direction={{ xs: "column", md: "row" }}
+              alignItems="center"
+              spacing={5}
+            >
+              {/* STEP 1 */}
+              {/* CIRCLE */}
+              <Box sx={styles.outerCircle}>
+                <Box sx={styles.innerCircle}>
+                  <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+                    01.
+                  </Typography>
+                  <Typography>
+                    File your notarized duly accomplished application form and
+                    complete requirements.
+                  </Typography>
+                  <Typography>
+                    Wait for the evaluation and assessment of application
+                  </Typography>
+                </Box>
+              </Box>
+
+              {/* INFOBOX */}
+              <Stack
+                justifyContent="center"
+                alignItems="flex-start"
+                spacing={1}
+                sx={styles.infoBox}
+              >
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Office Responsible
+                </Typography>
+                <Typography>
+                  BPLO Staff, One-Stop-Shop Receiving Section
+                </Typography>
+
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Location of Office
+                </Typography>
+                <Typography>3/F City Hall</Typography>
+
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Processing Time
+                </Typography>
+                <Typography>25 minutes</Typography>
+
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Amount of Fees
+                </Typography>
+                <Typography>N/A</Typography>
+              </Stack>
+            </Stack>
+            {/* ARROW */}
+            <DoubleArrowIcon sx={styles.arrow}></DoubleArrowIcon>
+            <Stack
+              direction={{ xs: "column", md: "row" }}
+              alignItems="center"
+              spacing={5}
+            >
+              {/* STEP 2 */}
+              {/* CIRCLE */}
+              <Box sx={styles.outerCircle}>
+                <Box sx={styles.innerCircle}>
+                  <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+                    02.
+                  </Typography>
+                  <Typography>
+                    File your notarized duly accomplished application form and
+                    complete requirements.
+                  </Typography>
+                  <Typography>
+                    Wait for the evaluation and assessment of application
+                  </Typography>
+                </Box>
+              </Box>
+
+              {/* INFOBOX */}
+              <Stack spacing={1} sx={styles.infoBox}>
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Office Responsible
+                </Typography>
+                <Typography>
+                  BPLO Staff, One-Stop-Shop Receiving Section
+                </Typography>
+
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Location of Office
+                </Typography>
+                <Typography>3/F City Hall</Typography>
+
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Processing Time
+                </Typography>
+                <Typography>25 minutes</Typography>
+
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Amount of Fees
+                </Typography>
+                <Typography>N/A</Typography>
+              </Stack>
+            </Stack>
+            <DoubleArrowIcon sx={styles.arrow}></DoubleArrowIcon>
+
+            <Stack
+              direction={{ xs: "column", md: "row" }}
+              alignItems="center"
+              spacing={5}
+            >
+              {/* STEP 3 */}
+              {/* CIRCLE */}
+              <Box sx={styles.outerCircle}>
+                <Box sx={styles.innerCircle}>
+                  <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+                    03.
+                  </Typography>
+                  <Typography>
+                    File your notarized duly accomplished application form and
+                    complete requirements.
+                  </Typography>
+                  <Typography>
+                    Wait for the evaluation and assessment of application
+                  </Typography>
+                </Box>
+              </Box>
+
+              {/* INFOBOX */}
+              <Stack
+                justifyContent="center"
+                alignItems="flex-start"
+                spacing={1}
+                sx={styles.infoBox}
+              >
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Office Responsible
+                </Typography>
+                <Typography>
+                  BPLO Staff, One-Stop-Shop Receiving Section
+                </Typography>
+
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Location of Office
+                </Typography>
+                <Typography>3/F City Hall</Typography>
+
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Processing Time
+                </Typography>
+                <Typography>25 minutes</Typography>
+
+                <Typography sx={{ fontWeight: "bold" }}>
+                  ◉ Amount of Fees
+                </Typography>
+                <Typography>N/A</Typography>
+              </Stack>
+            </Stack>
           </Stack>
         </Stack>
       </Stack>
