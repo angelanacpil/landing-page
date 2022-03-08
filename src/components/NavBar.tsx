@@ -43,6 +43,8 @@ export default function NavBar() {
           sx={{ display: { xs: "none", sm: "block" } }}
           value={value}
           onChange={handleChange}
+          textColor="primary"
+          indicatorColor="primary"
         >
           <Tab value="one" label="HOME" />
           <Tab value="two" label="BULLETIN" />

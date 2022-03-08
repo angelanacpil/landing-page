@@ -75,6 +75,10 @@ THEME & Polishing
 - button cover size fix 
 - Divide components separately 
 
+FONT COLOR 
+FONT SIZES 
+COVER PIC 
+
 REFACTOR 
 
 

@@ -4,21 +4,23 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 
-const styles = {
-  numberStyle: {
-    width: 50,
-    height: 50
-  },
-  borderText: {
-    border: "2px solid pink",
-    p: 2.5,
-    backgroundColor: "white",
-    borderRadius: 16,
-    width: "100%"
-  }
-};
+export default function ReqGraph(props: any) {
+  const styles = {
+    numberStyle: {
+      width: 50,
+      height: 50,
+      color: props.numColor,
+      backgroundColor: props.numBG
+    },
+    borderText: {
+      border: `2px solid ${props.borderColor}`,
+      p: 2.5,
+      backgroundColor: props.borderBG,
+      borderRadius: 16,
+      width: "100%"
+    }
+  };
 
-export default function ReqGraph() {
   return (
     <Box
       sx={{
@@ -39,14 +41,18 @@ export default function ReqGraph() {
           Requirements
         </Typography>
         {/* Items */}
-        <Stack direction="column" spacing={4}>
+        <Stack direction="column" spacing={4} sx={{ color: props.textColor }}>
           {/* 1 */}
           <Stack
             direction={{ xs: "column", sm: "row" }}
             alignItems="center"
             spacing={2}
           >
-            <Avatar>1</Avatar>
+            <Avatar
+              sx={{ color: props.numColor, backgroundColor: props.numBG }}
+            >
+              1
+            </Avatar>
             <Typography variant="h6" sx={styles.borderText}>
               Duly Accomplished Application Form
             </Typography>
@@ -71,7 +77,11 @@ export default function ReqGraph() {
             alignItems="center"
             spacing={2}
           >
-            <Avatar>3</Avatar>
+            <Avatar
+              sx={{ color: props.numColor, backgroundColor: props.numBG }}
+            >
+              3
+            </Avatar>
             <Typography variant="h6" sx={styles.borderText}>
               Barangay Clearance
             </Typography>
@@ -98,7 +108,11 @@ export default function ReqGraph() {
             alignItems="center"
             spacing={2}
           >
-            <Avatar>5</Avatar>
+            <Avatar
+              sx={{ color: props.numColor, backgroundColor: props.numBG }}
+            >
+              5
+            </Avatar>
             <Stack alignItems="flex-start" sx={styles.borderText} spacing={1}>
               <Typography variant="h6">Locational Clearance </Typography>
               <Typography>

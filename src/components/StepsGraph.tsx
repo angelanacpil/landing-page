@@ -2,38 +2,47 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
-import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 
-const styles = {
-  outerCircle: {
-    borderRadius: "50%",
-    border: 2,
-    p: 1
-  },
-  innerCircle: {
-    borderRadius: "50%",
-    border: 1,
-    width: { xs: "17rem", md: "20rem" },
-    height: { xs: "17rem", md: "20rem" },
-    display: "flex",
-    alignItems: "center",
-    flexDirection: "column",
-    gap: "1rem",
-    p: { xs: 2, md: 5 }
-  },
-  arrow: { fontSize: { xs: "7rem", md: "10rem" }, transform: "rotate(90deg)" },
-  infoBox: {
-    textAlign: "left",
-    border: 2,
-    width: { xs: "15rem", md: "20rem" },
-    height: "20rem",
-    p: 3
-  }
-};
+export default function StepsGraph(props: any) {
+  const styles = {
+    outerCircle: {
+      borderRadius: "50%",
+      border: 2,
+      p: 1,
+      color: props.outerColor,
+      backgroundColor: props.outerBG
+    },
+    innerCircle: {
+      borderRadius: "50%",
+      border: 1,
+      width: { xs: "17rem", md: "20rem" },
+      height: { xs: "17rem", md: "20rem" },
+      display: "flex",
+      alignItems: "center",
+      flexDirection: "column",
+      gap: "1rem",
+      p: { xs: 2, md: 5 },
+      color: props.innerColor,
+      backgroundColor: props.innerBG
+    },
+    arrow: {
+      fontSize: { xs: "7rem", md: "10rem" },
+      transform: "rotate(90deg)",
+      color: props.arrowColor
+    },
+    infoBox: {
+      textAlign: "left",
+      border: 2,
+      width: { xs: "15rem", md: "20rem" },
+      height: "20rem",
+      p: 3,
+      color: props.boxText,
+      backgroundColor: props.boxBG
+    }
+  };
 
-export default function StepsGraph() {
   return (
     <Box
       sx={{

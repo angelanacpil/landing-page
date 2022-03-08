@@ -1,5 +1,4 @@
 // IMPORTS
-import Paper from "@mui/material/Paper";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
@@ -8,13 +7,13 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import { Grid } from "@mui/material";
 
-const cardStyle = {
-  p: 2,
-  my: 2,
-  backgroundColor: "#e1e1e1"
-};
+export default function Services(props: any) {
+  const cardStyle = {
+    p: 2,
+    my: 2,
+    backgroundColor: props.cardBG
+  };
 
-export default function Services() {
   return (
     <Box
       sx={{
@@ -47,7 +46,7 @@ export default function Services() {
             <Stack justifyContent="center" alignItems="center" spacing={2}>
               <Avatar sx={{ width: 60, height: 60 }}></Avatar>
               <Typography variant="h5">Service #1</Typography>
-              <Typography sx={{ lineHeight: "2" }}>
+              <Typography sx={{ lineHeight: "2", color: "gray" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis, molestiae!
               </Typography>
@@ -62,7 +61,7 @@ export default function Services() {
             <Stack justifyContent="center" alignItems="center" spacing={2}>
               <Avatar sx={{ width: 60, height: 60 }}></Avatar>
               <Typography variant="h5">Service #2</Typography>
-              <Typography sx={{ lineHeight: "2" }}>
+              <Typography sx={{ lineHeight: "2", color: "gray" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis, molestiae!
               </Typography>
@@ -77,7 +76,7 @@ export default function Services() {
             <Stack justifyContent="center" alignItems="center" spacing={2}>
               <Avatar sx={{ width: 60, height: 60 }}></Avatar>
               <Typography variant="h5">Service #3</Typography>
-              <Typography sx={{ lineHeight: "2" }}>
+              <Typography sx={{ lineHeight: "2", color: "gray" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis, molestiae!
               </Typography>
