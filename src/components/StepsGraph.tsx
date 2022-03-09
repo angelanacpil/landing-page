@@ -21,9 +21,10 @@ export default function StepsGraph(props: any) {
       height: { xs: "17rem", md: "20rem" },
       display: "flex",
       alignItems: "center",
+      justifyContent: "center",
       flexDirection: "column",
       gap: "1rem",
-      p: { xs: 2, md: 5 },
+      p: { xs: 4, md: 5 },
       color: props.innerColor,
       backgroundColor: props.innerBG
     },
@@ -33,10 +34,13 @@ export default function StepsGraph(props: any) {
       color: props.arrowColor
     },
     infoBox: {
-      textAlign: "left",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      textAlign: "center",
       border: 2,
       width: { xs: "15rem", md: "20rem" },
-      height: "20rem",
+      height: { xs: "20rem", md: "20rem" },
       p: 3,
       color: props.boxText,
       backgroundColor: props.boxBG
@@ -62,6 +66,10 @@ export default function StepsGraph(props: any) {
 
         <Stack direction="row" spacing={5}>
           <Stack direction="column" alignItems="center" spacing={5}>
+            <Typography variant="h5" sx={{ maxWidth: "45ch", mb: 5, px: 2 }}>
+              Before the following steps, make sure to fill up the application
+              form and complete all the requirements from the list above.
+            </Typography>
             <Stack
               direction={{ xs: "column", md: "row" }}
               alignItems="center"
@@ -76,10 +84,8 @@ export default function StepsGraph(props: any) {
                   </Typography>
                   <Typography>
                     File your notarized duly accomplished application form and
-                    complete requirements.
-                  </Typography>
-                  <Typography>
-                    Wait for the evaluation and assessment of application
+                    complete requirements. Wait for the evaluation and
+                    assessment of application
                   </Typography>
                 </Box>
               </Box>
@@ -129,23 +135,21 @@ export default function StepsGraph(props: any) {
                     02.
                   </Typography>
                   <Typography>
-                    File your notarized duly accomplished application form and
-                    complete requirements.
-                  </Typography>
-                  <Typography>
-                    Wait for the evaluation and assessment of application
+                    Pay the corresponding business taxes and all regulatory fees
                   </Typography>
                 </Box>
               </Box>
 
               {/* INFOBOX */}
-              <Stack spacing={1} sx={styles.infoBox}>
+              <Stack
+                spacing={1}
+                sx={styles.infoBox}
+                style={{ height: "35rem" }}
+              >
                 <Typography sx={{ fontWeight: "bold" }}>
                   ◉ Office Responsible
                 </Typography>
-                <Typography>
-                  BPLO Staff, One-Stop-Shop Receiving Section
-                </Typography>
+                <Typography>Windows 1-4, City Treasury Dept.</Typography>
 
                 <Typography sx={{ fontWeight: "bold" }}>
                   ◉ Location of Office
@@ -155,12 +159,20 @@ export default function StepsGraph(props: any) {
                 <Typography sx={{ fontWeight: "bold" }}>
                   ◉ Processing Time
                 </Typography>
-                <Typography>25 minutes</Typography>
+                <Typography>5 minutes</Typography>
 
                 <Typography sx={{ fontWeight: "bold" }}>
                   ◉ Amount of Fees
                 </Typography>
-                <Typography>N/A</Typography>
+                <Typography>Based on:</Typography>
+                <Typography>
+                  - Capital, area, line of business, no. of employees
+                </Typography>
+                <Typography> – Sec. 14 of P.D. 1185</Typography>
+                <Typography> – Sec. 76 of M.O. 30-1993</Typography>
+                <Typography>
+                  – Sec. 7, 27, 76, 89 and 93 of C.O. 16-2005
+                </Typography>
               </Stack>
             </Stack>
             <DoubleArrowIcon sx={styles.arrow}></DoubleArrowIcon>
@@ -178,11 +190,9 @@ export default function StepsGraph(props: any) {
                     03.
                   </Typography>
                   <Typography>
-                    File your notarized duly accomplished application form and
-                    complete requirements.
-                  </Typography>
-                  <Typography>
-                    Wait for the evaluation and assessment of application
+                    Present the official receipts and wait for the final
+                    validation, approval and releasing of Mayor’s Permit and
+                    business plate/sticker
                   </Typography>
                 </Box>
               </Box>
@@ -209,7 +219,7 @@ export default function StepsGraph(props: any) {
                 <Typography sx={{ fontWeight: "bold" }}>
                   ◉ Processing Time
                 </Typography>
-                <Typography>25 minutes</Typography>
+                <Typography>20 minutes</Typography>
 
                 <Typography sx={{ fontWeight: "bold" }}>
                   ◉ Amount of Fees

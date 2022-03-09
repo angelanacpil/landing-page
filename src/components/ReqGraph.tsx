@@ -121,6 +121,107 @@ export default function ReqGraph(props: any) {
               </Typography>
             </Stack>
           </Stack>
+
+          {/* 6 */}
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            alignItems="center"
+            spacing={2}
+            sx={{ pl: { md: 5 } }}
+          >
+            <Avatar sx={styles.numberStyle}>6</Avatar>
+            <Stack alignItems="flex-start" sx={styles.borderText}>
+              <Typography variant="h6">
+                Certificate of Occupancy/Clearance
+              </Typography>
+              <Typography>
+                from the Local Building Official (4/F City Hall)
+              </Typography>
+            </Stack>
+          </Stack>
+
+          {/* 7 */}
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            alignItems="center"
+            spacing={2}
+          >
+            <Avatar
+              sx={{ color: props.numColor, backgroundColor: props.numBG }}
+            >
+              7
+            </Avatar>
+            <Stack alignItems="flex-start" sx={styles.borderText} spacing={1}>
+              <Typography variant="h6">Health Certificate </Typography>
+              <Typography>from City Health Dept., 8/F City Hall</Typography>
+            </Stack>
+          </Stack>
+
+          {/* 8 */}
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            alignItems="center"
+            spacing={2}
+            sx={{ pl: { md: 5 } }}
+          >
+            <Avatar sx={styles.numberStyle}>8</Avatar>
+            <Stack alignItems="flex-start" sx={styles.borderText}>
+              <Typography variant="h6">
+                Community Tax Certificate (Cedula)
+              </Typography>
+            </Stack>
+          </Stack>
+
+          {/* 9 */}
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            alignItems="center"
+            spacing={2}
+          >
+            <Avatar
+              sx={{ color: props.numColor, backgroundColor: props.numBG }}
+            >
+              9
+            </Avatar>
+            <Stack alignItems="flex-start" sx={styles.borderText} spacing={1}>
+              <Typography variant="h6">
+                Fire Safety Inspection Certificate (FSIC)
+              </Typography>
+            </Stack>
+          </Stack>
+
+          {/* 10 */}
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            alignItems="center"
+            spacing={2}
+            sx={{ pl: { md: 5 } }}
+          >
+            <Avatar sx={styles.numberStyle}>10</Avatar>
+            <Stack alignItems="flex-start" sx={styles.borderText}>
+              <Typography variant="h6">
+                CENRO Form (Hygienic Septic Tank)
+              </Typography>
+            </Stack>
+          </Stack>
+
+          {/* 11 */}
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            alignItems="center"
+            spacing={2}
+          >
+            <Avatar
+              sx={{ color: props.numColor, backgroundColor: props.numBG }}
+            >
+              11
+            </Avatar>
+            <Stack alignItems="flex-start" sx={styles.borderText} spacing={1}>
+              <Typography variant="h6">
+                PESO Form (City Ordinance No. 07-2003)
+              </Typography>
+            </Stack>
+          </Stack>
         </Stack>
       </Stack>
     </Box>
