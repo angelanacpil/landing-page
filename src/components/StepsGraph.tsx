@@ -40,7 +40,7 @@ export default function StepsGraph(props: any) {
       textAlign: "center",
       border: 2,
       width: { xs: "15rem", md: "20rem" },
-      height: { xs: "20rem", md: "20rem" },
+      height: "20rem",
       p: 3,
       color: props.boxText,
       backgroundColor: props.boxBG
